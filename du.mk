@@ -15,20 +15,20 @@
 
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/du/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := n5100
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/n5100/full_n5100.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n5100
-PRODUCT_NAME := omni_n5100
+PRODUCT_NAME := du_n5100
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N5100
 PRODUCT_MANUFACTURER := samsung
